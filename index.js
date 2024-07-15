@@ -13,7 +13,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors(
   {
-    origin: "https://work-timer.vercel.app"
+    origin: "https://work-timer.vercel.app",
+    credentials: true
   }
 ))
 app.use('/api', router)
